@@ -21,12 +21,6 @@ extern "C" {
 #endif
 
 //
-// Disables server certificate validation.
-// Used with the QUIC_PARAM_CONN_CERT_VALIDATION_FLAGS parameter.
-//
-#define QUIC_CERTIFICATE_FLAG_DISABLE_CERT_VALIDATION   0x80000000
-
-//
 // The different private parameters for QUIC_PARAM_LEVEL_GLOBAL.
 //
 
@@ -66,11 +60,6 @@ typedef struct QUIC_TEST_DATAPATH_HOOKS {
 #endif
 
 #define QUIC_PARAM_GLOBAL_TEST_DATAPATH_HOOKS           0x80000001  // QUIC_TEST_DATAPATH_HOOKS*
-
-//
-// The different private parameters for QUIC_PARAM_LEVEL_SESSION.
-//
-#define QUIC_PARAM_SESSION_ADD_RESUMPTION_STATE         0x80000001  // uint8_t*
 
 //
 // The different private parameters for QUIC_PARAM_LEVEL_CONNECTION.
